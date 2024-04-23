@@ -1,12 +1,13 @@
 /* arka plan kod başlangıcı */ 
  body{
-  background-image: url(Resimler/alpine_meadow-wallpaper-1920x1080.jpg);
-  background-repeat: no-repeat;
+  background-image: url(Resimler/wallpaperflare\,com_wallpaper\ \(9\)-photoaidcom-darken.jpg);
+ background-repeat: no-repeat;
   background-position: center center;
   background-attachment:  fixed;
   background-size: cover;
   opacity: 0.9; /* Opaklık seviyesi ile yazılara ve menulere opaklık veriyorum  */ 
 } 
+
 /* arka plan kod bitişi */ 
 
  /* tüm elemanların margin padding sıfır yaparız  kenar boşluğu ve aradaki boşlukları 0 yaparız  */ 
