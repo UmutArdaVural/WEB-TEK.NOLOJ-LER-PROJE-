@@ -1,0 +1,36 @@
+Dönem boyunca dersde anlatılan tüm konuların birleşimi ile ortaya bir web sitesi çıkarma 
+
+                                        PROJEDE İSTENENLER 
+1 - Site tasarımı olarak Bootstrap içeren responsive (çözünürlüğe göre değişen tasarım)bir yapı kullanılmalıdır.
+2 - Hakkında sayfası giriş sayfası niteliğinde olmalı, sayfa sahibinin kendini tanıtan bilgiler (Hobiler, 
+Etkinlikler vb ) , sevdiği spor,etkinlik vb ait resimler, linkler vb. içermelidir.
+3 - Eğitim bilgilerini içeren CV niteliğinde samantic tagların kullanıldığı özgeçmiş sayfası olmalıdır.
+4 - Şehrim şeklinde bir sayfa olmalı, bu sayfada memletinize ya da sevdiğiniz şehre ait bilgiler yer 
+almalıdır. (Şehrin nufusu, gezilecek yerler vb) Sayfanın başında ya da sonunda en az 4 resimden 
+oluşan bir slider yer almalıdır. Slider’da yer alan resimlere tıklandığında ilgili resimlere ait içeriklere 
+link olmalıdır.(İçerikler ayrıntılı olmadan site içersinde yer almalı
+5 - Mirasımız linkli bir sayfa ile, şehre ait kültürel miras niteliğindeki önemli bir eser; ya da Takımımız
+linkli bir sayfada şehrin takımı (Futbol,Basketbol vb branş farketmez) html elamanları kullanılarak 
+tanıtılmalıdır
+6 -İlgi alanlarım isminde bir sayfada, ilgi alanlarınız çerçevesinde (film, spor vb) internetten bulduğunuz 
+ücretsiz bir API servisinden veri alınıp gösterilmelidir. (Döviz api’leri gerçerli değildir)
+7 - Bir login sayfası olmalı Login sayfasında öğrenci numaranıza ait kullanıcı adı (örneğin 
+b1812100001@sakarya.edu.tr) ve şifre (şifre “b1812100001” gibi herkesin domain içermeyen 
+numarası olmalı) bir php sayafasına post edilip burada kullanıcı bilgileri gönderilen sayfada
+tanımlanan değişkenler ile kontrol edilmelidir. Eğer kontrol işlemi başarılı ise post edilen sayfada 
+Hoşgeldiniz “b1812100001” gibi bir mesajla login işleminin başarılı olduğu bildirilmeli, login işlemi 
+başarısız ise kullanıcı login sayfasına geri yönlendirilmelidir. Aynı zamanda login sayfasında kullanıcı
+adı ve şifre alanının boş geçilmemesi ve kullanıcı adının mail adresi olup olmadığı kontrol edilmelidir.
+            FORM KISMI İSTENENLER 
+8 - Sitede form elamanları içeren bir iletişim sayfası olmalıdır.
+      -  letişim sayfası tüm form elemanlarını içermeli, formun tüm elamanlarının elemanın özelliğine
+        göre seçim yada veri girişi yapılacak şekilde gönderilmesi sağlanmalıdır
+      -  İletişim formundaki gerekli kontrol işlemleri (boş mu, e-mail formatında mı vb.) javascript ve
+        popular bir js framework (Vue.js, Angular.js , Express.js vb) kullanılarak iki farklı butonda ayrı ayrı
+        denetlenmelidir. 
+      -  form, temizle ve gönder butonları içermelidir.
+      - Gönderilen form elemanlarına ait tüm bilgiler başka bir sayfada görüntülenmelidi
+
+
+
+Proje hosting hizmeti veren bir sitede yer almalıdır 
