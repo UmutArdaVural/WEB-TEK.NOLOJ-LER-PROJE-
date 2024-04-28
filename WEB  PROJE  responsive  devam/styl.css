@@ -19,9 +19,10 @@
 
 
 
-li{
-  list-style: none; /*liste tarzını kaldırır  */ 
+.nav-links li{
+  list-style: none;  /*liste tarzını kaldırır  */ 
 }
+
 
 
 /* menu kod başlangıcı */ 
@@ -274,6 +275,22 @@ margin-left :30%;
 .d-block w-100{
   width: 100px;
   height: 100px;
+}
+ul.b {list-style-type: square;}
+
+.container ul{
+  color: rgb(27, 188, 161);
+}
+.container table{
+  color: rgb(131, 225, 209);
+  border-collapse: separate;
+  border-spacing: 10px; /* Boşluk miktarını istediğiniz gibi ayarlayabilirsiniz */
+}
+
+
+th, td {
+  padding: 10px; /* Hücre içeriğine boşluk eklemek için */
+  border: 1px solid black; /* Hücreleri çerçevelemek için */
 }
 
 /* sehrim bitiş*/ 
