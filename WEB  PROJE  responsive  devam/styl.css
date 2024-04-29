@@ -293,6 +293,10 @@ th, td {
   border: 1px solid black; /* Hücreleri çerçevelemek için */
 }
 
+h1posisyon{
+  position: center  ;
+}
+
 /* sehrim bitiş*/ 
 
 
