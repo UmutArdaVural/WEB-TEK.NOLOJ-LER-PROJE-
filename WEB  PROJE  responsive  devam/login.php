@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="tr"> 
     <head>        
-        <title> İletişim </title>   
+        <title> İlgi alanlarım </title>   
           <link rel="stylesheet" href="styl.css">
           <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'> <!--  yazı sitili -->
-
+           
 
 
          <!-- link href ile bootsrap dahil ettik  -->
@@ -40,42 +41,41 @@
         </div>
       </nav>
       <!-- Menu tasarımıız bitiş  -->
+
+      <div class="boşluk"></div>
+      <div class="boşlukkısa"></div>
+
+      <div class="container" id="logincon">
+
+      <?php
+            $email = "umut.vural@ogr.sakarya.edu.tr";
+        $sifre = "b231210081";
+
+            $kullanici_email = $_POST["email"];
+        $kullanici_sifre = $_POST["password"];
+
+        if ($kullanici_email == $email && $kullanici_sifre == $sifre) {
+        echo "Giriş başarılı! Ana sayfaya yönlendiriliyorsunuz. Lütfen <a href='1-Hakkında Sayfa1.html'>buraya tıklayarak</a> devam edin.";
+        } else if ($kullanici_email == $email  && $kullanici_sifre != $sifre) {
+             echo " Şifre yanlış! Lütfen tekrar deneyin veya <a href='4-Login Sayfa4.html'>buraya tıklayarak</a> giriş yapın.";
+              }
+        else if ($kullanici_email != $email  && $kullanici_sifre == $sifre) {
+         echo " Eposta yanlış! Lütfen tekrar deneyin veya <a href='4-Login Sayfa4.html'>buraya tıklayarak</a> giriş yapın.";
+        }   
+        else {
+         echo " Eposta ve Şifre yanlış! Lütfen tekrar deneyin veya <a href='4-Login Sayfa4.html'>buraya tıklayarak</a> giriş yapın.";
+     }
+    ?>
+      </div>
+
+
+
+
       <div class="boşlukkısa"></div>
 
       <div class="boşlukkısa"> </div>
-
-      <div class="container" id="formconatineer">
-
-        <h2>Form Örneği</h2>
-        <form action="submit.php" method="post">
-            <table>
-                <tr>
-                    <th><label for="name">Adınız:</label></th>
-                    <td><input type="text" id="name" name="name"></td>
-                </tr>
-                <tr>
-                    <th><label for="email">E-posta:</label></th>
-                    <td><input type="email" id="email" name="email"></td>
-                </tr>
-                <tr>
-                    <th><label for="message">Mesajınız:</label></th>
-                    <td><textarea id="message" name="message" rows="4" cols="50"></textarea></td>
-                </tr>
-                <tr>
-                    <td colspan="2" style="text-align:center;"><input type="submit" value="Gönder"></td>
-                </tr>
-            </table>
-        </form> 
-
-
-
-
-       
-
-
-
-
-      </div>
+      <div class="boşlukkısa"></div>
+ 
 
       <!-- sayfanın altındaki kalın şerit için -->
       <div class="container-fluid  p-5 mt-5"     style="background-color: gray; text-align: center; color: aliceblue;">UmutArdaVural  &copy; 2024  </div>
