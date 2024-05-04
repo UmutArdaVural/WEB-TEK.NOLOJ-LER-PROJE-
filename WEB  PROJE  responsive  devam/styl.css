@@ -317,10 +317,25 @@ ul.b {list-style-type: square;}
 
 #formconatineer{
   background-color:gray;
+  width: 650px;
+  border-radius: 55px;   border: 3px solid rgb(255, 255, 255);
 }
 
 #formconatineer th{
- color: black;
+ color: whitesmoke;
+ 
+}
+.formuzunluk{
+width:300px;
+background-color: rgb(211, 211, 211);
+border-radius: 25px;   border: 3px solid rgb(255, 255, 255);
+
+}
+.formgönder{
+  margin-left: 15%;
+  margin-right: 25%;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 /*form sayfgası bitiş */ 
@@ -343,6 +358,10 @@ color: rgb(255, 255, 255);
   background-color: rgb(255, 255, 255);
   width: 500px;
   height: 200px;
+}
+#iletişimcon{
+  background-color: rgb(255, 255, 255);
+ 
 }
 
 
