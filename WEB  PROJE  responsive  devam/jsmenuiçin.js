@@ -39,6 +39,21 @@ const navShow = () => {  // navshow fonksiyonunu oluşturduk  //
     
   }
 
+
+
+
+  function validatePhoneNumber(phoneNumber) {
+    // Telefon numarası için bir desen oluştur
+    var phonePattern = /^\d*$/;
+
+    // Telefon numarasının desene uygun olup olmadığını kontrol et
+    if (!phonePattern.test(phoneNumber)) {
+        return false; // Desene uymuyorsa false döndür
+    }
+
+    return true; // Desene uyuyorsa true döndür
+}
+
   function validateıletısım() {
     var firstname = document.getElementById("firstname").value;
     var lastname = document.getElementById("lastname").value;
@@ -47,6 +62,11 @@ const navShow = () => {  // navshow fonksiyonunu oluşturduk  //
     var city = document.getElementById("city").value;
     var dob = document.getElementById("dob").value;
     var message = document.getElementById("message").value;
+
+
+    if (!validatePhoneNumber(phone)) {
+      alert("Geçerli bir telefon numarası girin");
+      return false;}
 
     // Ad ve soyadında sayı olup olmadığını kontrol et
     var namePattern = /\d/;
