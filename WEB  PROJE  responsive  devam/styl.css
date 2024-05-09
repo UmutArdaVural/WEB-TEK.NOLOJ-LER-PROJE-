@@ -266,7 +266,72 @@ margin-left :30%;
 
 /* özgeçmiş  */
 
-/*  kısa oldukları için clastan sonra slty*/
+#Özgeçmişcon  a:hover{
+  color: aqua; text-decoration: none;}  
+
+#Özgeçmişcon  a{ color: rgb(28, 28, 28);   text-decoration: none;  }
+  body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+#Özgeçmişcon {
+  max-width: 1080px;
+  margin: 50px auto; /* Üst ve alttan 20 piksel, sağ ve soldan 10 piksel */
+  padding: 0 10px;
+}
+#Özgeçmişcon header {
+  background-color: rgb(198, 198, 198) ;
+  color: #fff;
+  text-align: center;
+  padding: 2em 0;
+  margin-bottom: 20px;
+  border-radius: 20px;
+
+}
+
+#Özgeçmişcon h1 {
+  margin: 5px;
+  line-height: 250%;
+  color: #333;
+}
+#Özgeçmişcon section {
+  background-color: #fff;
+  padding: 50px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+#Özgeçmişcon h2 {
+  color: #333;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+}
+#Özgeçmişcon ul {
+  list-style: none;
+  padding: 0;
+}
+#Özgeçmişcon li {
+  margin-bottom: 10px;
+}
+#Özgeçmişcon footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  width: 100%;
+}
+#Özgeçmişcon footer p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .ozgeçmişresim {
+      max-width: 100%; /* Resmin maksimum genişliğini ekran genişliğine orantılı yapar */
+      height: auto; /* Resmin orijinal en-boy oranını korur */
+  }
+}
+
 
 /* özgeçmiş bitiş */ 
 
@@ -367,3 +432,16 @@ color: rgb(255, 255, 255);
 
 /* login sayfası bitiş */ 
 
+/* genel bir sayfa üstü */ 
+
+#sayfaüst {
+  background-color: gray;
+width: 420px;
+border-radius: 15px;   border: 1px solid aliceblue;
+
+}
+#sayfaüst p{
+  margin-left: 100px;
+  font-size: 280%;
+
+}
