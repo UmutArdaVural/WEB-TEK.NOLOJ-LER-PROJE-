@@ -257,6 +257,10 @@ font-size: 330%;
 margin-left :30%;
 
 }
+#anasayfaresimler {
+
+  border-radius: 5px;   border: 1px solid aliceblue; background-color:  gray;
+}
 
 
 /* responsive hakkındda bitiş*/ 
@@ -359,8 +363,21 @@ ul.b {list-style-type: square;}
   border-spacing: 10px; /* Boşluk miktarını istediğiniz gibi ayarlayabilirsiniz */
 }
 
+#şehrimcon{
+  background-color: gray;
+  width: 370px;
+  border-radius: 15px;   border: 1px solid aliceblue;
+}
 
+#şehrimcon p {
+  margin-left: 80px;
+  font-size: 250%;
+  margin-top: 10px;
 
+}
+ #sehrimcontablo{
+  background-color: aliceblue;   border-radius: 10px; border: 2px solid rgb(177, 178, 179)
+ }
 
 
 
@@ -428,6 +445,15 @@ color: rgb(255, 255, 255);
   background-color: rgb(255, 255, 255);
  
 }
+.toast-container {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  z-index: 9999;
+  margin-left: 20px;
+}
+
 
 
 /* login sayfası bitiş */ 
