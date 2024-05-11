@@ -1,12 +1,34 @@
 /* arka plan kod başlangıcı */ 
- body{
-  background-image: url(Resimler/wallpaperflare\,com_wallpaper\ \(9\)-photoaidcom-darken.jpg);
- background-repeat: no-repeat;
+body {
+  background-image: url("Resimler/wallpaperflare\,com_wallpaper\ \(9\)-photoaidcom-darken.jpg"); /* Başlangıçta kullanılacak resim */
+  background-repeat: no-repeat;
   background-position: center center;
-  background-attachment:  fixed;
+  background-attachment: fixed;
   background-size: cover;
-  opacity: 0.9; /* Opaklık seviyesi ile yazılara ve menulere opaklık veriyorum  */ 
-} 
+    animation-name: slideBackground;
+  animation-duration: 60s; /* Slayt geçiş süresini buradan ayarlayabilirsiniz */
+ /*animation-timing-function: linear;*/  /* Animasyon eğrisini linear olarak değiştirin */
+  animation-iteration-count: infinite;
+  opacity: 0.9;
+}
+
+@keyframes slideBackground {
+  0%, 5% {
+    background-image: url("Resimler/wallpaperflare\,com_wallpaper\ \(9\)-photoaidcom-darken.jpg");
+  }
+  10%, 25% {
+    background-image: url("Resimler/arkaplan5.jpg");
+  }
+  30%, 45% {
+    background-image: url("Resimler/arkaplan3.jpg");
+  }
+  50%, 65% {
+    background-image: url("Resimler/arkaplan6-photoaidcom-darken.jpg");
+  }
+  70%, 100% {
+    background-image: url("Resimler/arkaplan5.jpg");
+  }
+}
 
 /* arka plan kod bitişi */ 
 
