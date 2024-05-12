@@ -6,7 +6,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
     animation-name: slideBackground;
-  animation-duration: 60s; /* Slayt geçiş süresini buradan ayarlayabilirsiniz */
+  animation-duration: 90s; /* Slayt geçiş süresini buradan ayarlayabilirsiniz */
  /*animation-timing-function: linear;*/  /* Animasyon eğrisini linear olarak değiştirin */
   animation-iteration-count: infinite;
   opacity: 0.9;
