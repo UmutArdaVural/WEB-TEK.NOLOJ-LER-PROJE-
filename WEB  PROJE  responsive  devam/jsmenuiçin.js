@@ -22,16 +22,16 @@ const navShow = () => {  // navshow fonksiyonunu oluşturduk  //
 
 
   function validateForm() {
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
+    var username = document.getElementById("username").value; // formdan input type text olan yerlerden kullanıcı adı ve şifreyi aldık 
+    var password = document.getElementById("password").value; 
     
     // E-posta adresinin doğruluğunu kontrol et
     var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(username)) {
         alert("Lütfen geçerli bir e-posta adresi girin");
-        return false;
+        return false; 
     }
-
+    // boş olup olmadığı kontrol ediliyor 
     if (username == "" || password == "") {
       alert("Kullanıcı adı ve şifre alanları boş bırakılamaz!");
       return false;     
@@ -43,7 +43,7 @@ const navShow = () => {  // navshow fonksiyonunu oluşturduk  //
 
 
   function validatePhoneNumber(phoneNumber) {
-    // Telefon numarası için bir desen oluştur
+    // Telefon numarası sadece rakam karakteri içeriyormu kontrolü 
     var phonePattern = /^\d*$/;
 
     // Telefon numarasının desene uygun olup olmadığını kontrol et
@@ -68,7 +68,7 @@ const navShow = () => {  // navshow fonksiyonunu oluşturduk  //
       alert("Geçerli bir telefon numarası girin");
       return false;}
 
-    // Ad ve soyadında sayı olup olmadığını kontrol et
+    // Ad ve soyadında sayı olup olmadığını kontrol 
     var namePattern = /\d/;
     if (namePattern.test(firstname) || namePattern.test(lastname)) {
         alert("Ad ve soyad alanlarında sayı bulunamaz");
@@ -100,7 +100,7 @@ const navShow = () => {  // navshow fonksiyonunu oluşturduk  //
         alert("13 yaşından küçükler formu dolduramaz");
         return false;
     }
-
+    // alınana yerlerin boş olup olmadığını kontrol et boşluk varsa uyarı ver 
     if (firstname == "" || lastname == "" || email == "" || phone == "" || city == "" || dob == "" || message == "") {
         alert("Lütfen tüm alanları doldurun");
         return false;
