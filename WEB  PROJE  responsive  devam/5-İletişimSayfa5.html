@@ -206,28 +206,28 @@
             }
             
             // Yaşadığı şehir kontrolü
+          // Yaşadığı şehir kontrolü
             var city = $('#city').val().trim();
-            if(city === ''){
+            if (city === '') {
                 isValid = false;
                 $('#city').css({
                     "border": "1px solid red",
                     "background": "#FFCECE"
                 });
                 errorMessage += "- Lütfen şehir alanını doldurun.\n";
-            } else if (containsDigit(city) || containsLetter(city)){
+            } else if (containsDigit(city)) {
                 isValid = false;
                 $('#city').css({
                     "border": "1px solid red",
                     "background": "#FFCECE"
                 });
-                errorMessage += "- Şehir alanı sadece harf içermelidir.\n";
+                errorMessage += "- Şehir alanı sayı içermemelidir.\n";
             } else {
                 $('#city').css({
                     "border": "",
                     "background": ""
                 });
             }
-            
             
             // Tüm alanlar doluysa formu gönder
             if(isValid){
