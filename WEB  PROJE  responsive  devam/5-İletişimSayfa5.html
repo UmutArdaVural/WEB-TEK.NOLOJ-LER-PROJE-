@@ -29,8 +29,8 @@
        <nav>
         <div class="nav-logo">Hoş Geldiniz</div>
         <ul class="nav-links">  <!-- ul yi nav links classına atadım  -->
-          <li><a href="1-Hakkında Sayfa1.html">Hakkımda</a></li>
-          <li><a href="2-Sehrim Sayfa2.html">Sehrim</a></li>
+            <li><a href="index.html">Hakkımda</a></li>
+            <li><a href="2-Sehrim Sayfa2.html">Sehrim</a></li>
           <li><a href="3-Mirasımız Sayfa3.html">Mirasımız</a></li>
           <li><a href="4-Login Sayfa4.html">Login</a></li>
           <li><a href="5-İletişimSayfa5.html">İletişim</a></li>
@@ -54,23 +54,48 @@
 
         <h2 style="margin-left: 40%;">İletişim Formu  </h2>
         <form class="formgönder" action="iletişim.php" method="post" enctype="multipart/form-data" onsubmit="return validateıletısım()">
-          <table>
+          <table>   
+            <tr> 
+                <th> <br> </th>
+                <td>  <br> </td>
+            </tr>
+
               <tr>
                   <th><label for="firstname">Ad:</label></th>
                   <td><input class="formuzunluk"  type="text" id="firstname" name="firstname"></td>
               </tr>
+              <tr> 
+                <th> <br> </th>
+                <td>  <br> </td>
+            </tr>
+
               <tr>
                   <th><label for="lastname">Soyad:</label></th>
                   <td><input  class="formuzunluk" type="text" id="lastname" name="lastname"></td>
               </tr>
+              <tr> 
+                <th> <br> </th>
+                <td>  <br> </td>
+            </tr>
+
               <tr>
                   <th><label for="email">E-posta:</label></th>
                   <td><input  class="formuzunluk" type="email" id="email" name="email"></td>
               </tr>
+              <tr> 
+                <th> <br> </th>
+                <td>  <br> </td>
+            </tr>
+
               <tr>
                   <th><label for="phone">Telefon:</label></th>
                   <td><input  class="formuzunluk" type="tel" id="phone" name="phone"></td>
               </tr>
+              <tr> 
+                <th> <br> </th>
+                <td>  <br> </td>
+            </tr>
+
               <tr>
                   <th><label for="gender">Cinsiyet:</label></th>
                   <td>
@@ -81,14 +106,60 @@
                       </select>
                   </td>
               </tr>
+              <tr> 
+                <th> <br> </th>
+                <td>  <br> </td>
+            </tr>
+
               <tr>
                   <th><label for="city">Yaşadığı Şehir:</label></th>
                   <td><input class="formuzunluk" class="formuzunluk"  type="text" id="city" name="city"></td>
               </tr>
+              <tr> 
+                <th> <br> </th>
+                <td>  <br> </td>
+            </tr>
+
               <tr>
                   <th><label for="dob">Doğum Tarihi:</label></th>
                   <td><input class="formuzunluk" class="formuzunluk" type="date" id="dob" name="dob"></td>
               </tr>
+
+              <tr> 
+                <th> <br> </th>
+                <td>  <br> </td>
+            </tr>
+            <tr>
+                <th><label for="gender">Yakın üniversite:</label></th>
+                <td>
+                    <select class="formuzunluk" name="universiteler" id="universiteler">
+                        <option value="sau" selected>Sakarya Üniversitesi</option>
+                        <option value="subu">Sakarya Uyg. Bil. Üniversitesi</option>
+                        <option value="kou">Kocaeli Üniversitesi</option>
+                        <option value="itu">İstanbul Teknik Üniversitesi</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr> 
+                <th> <br> </th>
+                <td>  <br> </td>
+            </tr>
+
+            <tr>
+                <th><label for="önemdurumu">Önem durumu:</label></th>
+                <td>
+                    <input type="radio" name="önemdurumu" value="1.derece" checked>1.derece
+                    <input type="radio" name="önemdurumu" value="2.derece">2.derece
+                </td>
+            </tr>
+
+            <tr> 
+                <th> <br> </th>
+                <td>  <br> </td>
+            </tr>
+            
+
               <tr>
                   <th><label for="preferred_contact">Tercih Edilen İletişim:</label></th>
                   <td>
@@ -99,6 +170,12 @@
                       </select>
                   </td>
               </tr>
+
+              <tr> 
+                <th> <br> </th>
+                <td>  <br> </td>
+            </tr>
+
               <tr>
                   <th><label for="employment">İş Durumu:</label></th>
                   <td>
@@ -109,20 +186,46 @@
                       </select>
                   </td>
               </tr>
+
+              <tr> 
+                <th> <br> </th>
+                <td>  <br> </td>
+            </tr>
+
               <tr>
                   <th><label for="message">Mesaj:</label></th>
                   <td><textarea id="message" class="formuzunluk" name="message" rows="4" cols="45"></textarea></td>
               </tr>
+              <tr> 
+                <th> <br> </th>
+                <td>  <br> </td>
+            </tr>
+
               <tr>
                   <th><label for="files">Dosyalar:</label></th>
                   <td><input type="file" id="files" name="files[]" multiple></td>
               </tr>
+              <tr> 
+                <th> <br> </th>
+                <td>  <br> </td>
+            </tr>
+
               <tr>
                 <td colspan="2" style="text-align:center;"><input type="reset" value="Formu Tezmizle"></td>
             </tr>
+            <tr> 
+                <th> <br> </th>
+                <td>  <br> </td>
+            </tr>
+
               <tr>
                   <td colspan="2" style="text-align:center;"><input type="submit" value=" Gönderjs  ile"></td>
               </tr>
+              <tr> 
+                <th> <br> </th>
+                <td>  <br> </td>
+            </tr>
+
               <tr>
                 <td colspan="2" style="text-align:center;"><input type="button" value="Gönder framwork ile"></td>
             </tr>
@@ -146,7 +249,7 @@
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-        <?-- jquaru kullanarak form kontrolü -->
+        <?-- jQuery kullanarak form kontrolü -->
         <?--inpu type button olana tıklanınca kontrolün gerçekleşmesi için  -->
 
         <script>

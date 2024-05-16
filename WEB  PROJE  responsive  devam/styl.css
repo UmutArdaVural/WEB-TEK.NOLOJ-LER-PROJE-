@@ -427,8 +427,9 @@ ul.b {list-style-type: square;}
 
 #formconatineer th{
  color: whitesmoke;
- 
+ width: 200px;
 }
+
 .formuzunluk{
 width:300px;
 background-color: rgb(211, 211, 211);

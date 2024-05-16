@@ -41,6 +41,7 @@
       </nav>
       <!-- Menu tasarımıız bitiş  -->
 
+      <br> <br> <br>
 
       <div class="container" id="iletişimcon"> 
       <?php
@@ -57,21 +58,27 @@ $preferred_contact = $_POST['preferred_contact'];
 $employment = $_POST['employment'];
 $message = $_POST['message'];
 
+$önemdurumu = $_POST['önemdurumu'];
+$universiteler = $_POST['universiteler'];
+
 // Ekrana yazdır
-echo "<h2>Gönderilen Bilgiler:</h2>";
-echo "<p><strong>Ad:</strong> $firstname</p>";
+echo "<h2>Gönderilen Bilgiler:</h2>  <br>  <br>";
+echo "<p><strong>Ad:</strong> $firstname</p>  <br>";
 
-echo "<p><strong>Soyad:</strong> $lastname</p>";
+echo "<p><strong>Soyad:</strong> $lastname</p> <br> ";
 
-echo "<p><strong>E-posta:</strong> $email</p>";
+echo "<p><strong>E-posta:</strong> $email</p>  <br>";
 
-echo "<p><strong>Telefon:</strong> $phone</p>";
+echo "<p><strong>Telefon:</strong> $phone</p> <br>";
 
-echo "<p><strong>Cinsiyet:</strong> $gender</p>";
-echo "<p><strong>Şehir:</strong> $city</p>";
-echo "<p><strong>Doğum Tarihi:</strong> $dob</p>";
-echo "<p><strong>Tercih Edilen İletişim:</strong> $preferred_contact</p>";
-echo "<p><strong>İş Durumu:</strong> $employment</p>";
+echo "<p><strong>Cinsiyet:</strong> $gender</p>  <br>";
+echo "<p><strong>Şehir:</strong> $city</p>  <br>" ;
+echo "<p><strong>Doğum Tarihi:</strong> $dob</p>  <br>";
+echo "<p><strong>Tercih Edilen İletişim:</strong> $preferred_contact</p>  <br>";
+echo "<p><strong>Önem durumu :</strong> $önemdurumu</p> <br>";
+
+echo "<p><strong>Yakın Üniversite :</strong> $universiteler</p>";
+
 
 echo "<p><strong>Mesaj:</strong> $message</p>";
 // Eğer dosya yüklendi ise dosya bilgilerini de ekrana yazdır

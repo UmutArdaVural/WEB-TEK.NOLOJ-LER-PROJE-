@@ -88,6 +88,14 @@ const navShow = () => {  // navshow fonksiyonunu oluşturduk  //
         return false;
     }
 
+    // doğum tarihi dolumu kontrol 
+    var dogumTarihi = document.getElementById("dob").value;
+    if (dogumTarihi == "") {
+        alert("Lütfen doğum tarihinizi girin.");
+        return false;
+    }
+    
+  
     // Doğum tarihinin geçerli olup olmadığını ve kullanıcının 13 yaşından büyük olduğunu kontrol et
     var today = new Date();
     var birthDate = new Date(dob);

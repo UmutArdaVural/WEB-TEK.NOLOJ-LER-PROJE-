@@ -48,7 +48,7 @@
       <div class="container" id="logincon">
 
       <?php
-            $email = "umut.vural@ogr.sakarya.edu.tr";
+        $email = "umut.vural@ogr.sakarya.edu.tr";
         $sifre = "b231210081";
 
         $kullanici_email = $_POST["email"];
