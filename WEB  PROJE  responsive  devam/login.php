@@ -55,7 +55,7 @@
         $kullanici_sifre = $_POST["password"];
 
         if ($kullanici_email == $email && $kullanici_sifre == $sifre) {
-        echo "Giriş başarılı Hoşgeldiniz b231210081 Umut Arda Vural ! Ana sayfaya yönlendiriliyorsunuz. Lütfen <a href='1-Hakkında Sayfa1.html'>buraya tıklayarak</a> devam edin.";
+        echo "Giriş başarılı Hoşgeldiniz b231210081 Umut Arda Vural ! Ana sayfaya yönlendiriliyorsunuz. Lütfen <a href='index.html'>buraya tıklayarak</a> devam edin.";
         } else if ($kullanici_email == $email  && $kullanici_sifre != $sifre) {
              echo " Şifre yanlış! Lütfen tekrar deneyin veya <a href='4-Login Sayfa4.html'>buraya tıklayarak</a> giriş yapın.";
               }
