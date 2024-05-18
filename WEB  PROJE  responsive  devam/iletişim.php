@@ -61,6 +61,22 @@ $message = $_POST['message'];
 $önemdurumu = $_POST['önemdurumu'];
 $universiteler = $_POST['universiteler'];
 
+
+if (isset($_POST['ders1'])) {
+  $ders1 = $_POST['ders1'];
+}
+else {
+  $ders1 = "Hayır";
+}
+
+if (isset($_POST['ders2'])) {
+  $ders2 = $_POST['ders2'];
+}else{
+  $ders2 = "Hayır";
+
+}
+
+
 // Ekrana yazdır
 echo "<h2>Gönderilen Bilgiler:</h2>  <br>  <br>";
 echo "<p><strong>Ad:</strong> $firstname</p>  <br>";
@@ -77,10 +93,15 @@ echo "<p><strong>Doğum Tarihi:</strong> $dob</p>  <br>";
 echo "<p><strong>Tercih Edilen İletişim:</strong> $preferred_contact</p>  <br>";
 echo "<p><strong>Önem durumu :</strong> $önemdurumu</p> <br>";
 
-echo "<p><strong>Yakın Üniversite :</strong> $universiteler</p>";
+echo "<p><strong> Web sevilen dersmi  :</strong> $ders1</p> <br>";
+
+echo "<p><strong> Matematik Sevilen dersmi :</strong> $ders2</p> <br>";
 
 
-echo "<p><strong>Mesaj:</strong> $message</p>";
+echo "<p><strong>Yakın Üniversite :</strong> $universiteler</p> <br>";
+
+
+echo "<p><strong>Mesaj:</strong> $message</p> <br>";
 // Eğer dosya yüklendi ise dosya bilgilerini de ekrana yazdır
 if(isset($_FILES['files'])) {
     $file_count = count($_FILES['files']['name']);

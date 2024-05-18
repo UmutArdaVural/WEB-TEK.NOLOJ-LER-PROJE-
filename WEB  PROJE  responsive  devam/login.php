@@ -20,27 +20,7 @@
     <body>
         
         <!-- nav kullanarak direk en üste konumlancak onun için uğraşmıcam -->
-       <!-- Menu tasarımıız -->
-       <nav>
-        <div class="nav-logo">Hoş Geldiniz</div>
-        <ul class="nav-links">  <!-- ul yi nav links classına atadım  -->
-          <li><a href="1-Hakkında Sayfa1.html">Hakkımda</a></li>
-          <li><a href="2-Sehrim Sayfa2.html">Sehrim</a></li>
-          <li><a href="3-Mirasımız Sayfa3.html">Mirasımız</a></li>
-          <li><a href="4-Login Sayfa4.html">Login</a></li>
-          <li><a href="5-İletişimSayfa5.html">İletişim</a></li>
-          <li><a href="6-Özgeçmişsayfa6.html">Öz Geçmiş</a></li>
-          <li><a href="7- İlgialanlarım.html">İlgi alanalarım </a></li>
-
-
-        </ul>
-        <div class="burger">  <!-- menuyü açıp kapatmak için burger oluştururuz  -->
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-      </nav>
-      <!-- Menu tasarımıız bitiş  -->
+   
 
       <div class="boşluk"></div>
       <div class="boşlukkısa"></div>
